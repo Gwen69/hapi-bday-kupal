@@ -11,16 +11,17 @@
 </head>
 <body>
 
-  <audio autoplay loop>
+  <!-- Add a play button for manual start -->
+  <button id="playBtn" onclick="document.getElementById('bgMusic').play();">Play Music</button>
+
+  <!-- Background audio with autoplay set off -->
+  <audio id="bgMusic" loop>
     <source src="happybirthday.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 
   <h1>Make a wish!</h1>
-<p style="text-align: center; font-size: 18px; color: white;">
- (tap the flame when done)
-</p>
-
+  
   <div class="glow" id="glow"></div>
   <div id="candle">
     <div class="stripe"></div>
